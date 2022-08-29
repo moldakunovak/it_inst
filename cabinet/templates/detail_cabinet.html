@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+<h1>{{author.username}}</h1>
+<p>{{author.name}} - {{author.sur_name}}</p>
+{%for file in author.photos.all%}
+<img src="{{file}}" alt="..." width="80" height="100">
+{%endfor%}
+</body>
